@@ -26,7 +26,7 @@ const filename = `${cwd}/package.json`;
 // Convert the file contents to a JSON object
 const data = JSON.parse(loadFile(filename));
 
-const schemaFilename = `${globalModules}/@jonesrussell42/packages/package.schema.json`;
+const schemaFilename = `${globalModules}/@jonesrussell42/scripts/package.schema.json`;
 const fileSchema = loadFile(schemaFilename);
 
 // Convert the fileSchema contents to a JSON object

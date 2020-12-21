@@ -7,16 +7,16 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/jonesrussell/packages">
+  <a href="https://github.com/jonesrussell/scripts">
     <img src="https://blog.jonesrussell42.xyz/assets/img/smile.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">packages</h3>
+  <h3 align="center">scripts</h3>
 
   <p align="center">
-    <a href="https://github.com/jonesrussell/packages/issues">Report Bug</a>
+    <a href="https://github.com/jonesrussell/scripts/issues">Report Bug</a>
     ·
-    <a href="https://github.com/jonesrussell/packages/issues">Request Feature</a>
+    <a href="https://github.com/jonesrussell/scripts/issues">Request Feature</a>
   </p>
 </p>
 
@@ -58,13 +58,13 @@ npm install npm@latest -g
 1. Install NPM package
 
 ```sh
-npm install -g @jonesrussell/packages
+npm install -g @jonesrussell/scripts
 ```
 
 ## Usage
 
 ```sh
-$ packages
+$ scripts
 
            dependencies            
 ┌───────────────────────┬─────────┐
@@ -120,20 +120,20 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Russell Jones - [@jonesrussell42](https://twitter.com/@jonesrussell42) - jonesrussell42@gmail.com
 
-[https://github.com/jonesrussell/packages](https://github.com/jonesrussell/packages)
+[https://github.com/jonesrussell/scripts](https://github.com/jonesrussell/scripts)
 
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 
-[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/packages.svg?style=flat-square
-[contributors-url]: https://github.com/jonesrussell/packages/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/jonesrussell/packages.svg?style=flat-square
-[forks-url]: https://github.com/jonesrussell/packages/network/members
-[stars-shield]: https://img.shields.io/github/stars/jonesrussell/packages.svg?style=flat-square
-[stars-url]: https://github.com/jonesrussell/packages/stargazers
-[issues-shield]: https://img.shields.io/github/issues/jonesrussell/packages.svg?style=flat-square
-[issues-url]: https://github.com/jonesrussell/packages/issues
-[license-shield]: https://img.shields.io/github/license/jonesrussell/packages.svg?style=flat-square
-[license-url]: https://github.com/jonesrussell/packages/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/jonesrussell/scripts.svg?style=flat-square
+[contributors-url]: https://github.com/jonesrussell/scripts/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/jonesrussell/scripts.svg?style=flat-square
+[forks-url]: https://github.com/jonesrussell/scripts/network/members
+[stars-shield]: https://img.shields.io/github/stars/jonesrussell/scripts.svg?style=flat-square
+[stars-url]: https://github.com/jonesrussell/scripts/stargazers
+[issues-shield]: https://img.shields.io/github/issues/jonesrussell/scripts.svg?style=flat-square
+[issues-url]: https://github.com/jonesrussell/scripts/issues
+[license-shield]: https://img.shields.io/github/license/jonesrussell/scripts.svg?style=flat-square
+[license-url]: https://github.com/jonesrussell/scripts/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/jonesrussell42
 [product-screenshot]: images/screenshot.png
