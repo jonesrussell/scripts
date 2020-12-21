@@ -48,7 +48,7 @@ for (let [name] of Object.entries(data?.scripts)) {
   scripts.push({ Name: name });
 }
 
-function scripsTable(title: string, scripts: any) {
+function scripsTable({ title, scripts }: { title: string; scripts: any; }) {
   const p = new Table({
     title,
     columns: [{ name: "Name" }],
@@ -58,6 +58,6 @@ function scripsTable(title: string, scripts: any) {
   return p.render();
 }
 
-console.log(`${scripsTable('scripts', scripts)}`);
+console.log(`${scripsTable({ title: 'scripts', scripts })}`);
 
 process.exit(0);
