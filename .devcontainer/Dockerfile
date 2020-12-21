@@ -22,6 +22,7 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
   && apt-get purge -y imagemagick imagemagick-6-common \
   # Install common packages, non-root user, update yarn and install nvm
   && bash /tmp/library-scripts/common-debian.sh "${INSTALL_ZSH}" "${USERNAME}" "${USER_UID}" "${USER_GID}" "${UPGRADE_PACKAGES}" \
+  && bash /tmp/library-scripts/docker-debian.sh "${ENABLE_NONROOT_DOCKER}" "${SOURCE_SOCKET}" "${TARGET_SOCKET}" "${USERNAME}" \
   # Install yarn, nvm
   && rm -rf /opt/yarn-* /usr/local/bin/yarn /usr/local/bin/yarnpkg \
   && bash /tmp/library-scripts/node-debian.sh "${NVM_DIR}" "none" "${USERNAME}" \
@@ -49,3 +50,6 @@ RUN sudo -u ${USERNAME} npm install -g eslint tslint typescript \
 ARG EXTRA_NODE_VERSION=v14.14.0
 RUN su node -c "source /usr/local/share/nvm/nvm.sh && nvm install ${EXTRA_NODE_VERSION}"
 
+ENTRYPOINT ["/usr/local/share/docker-init.sh"]
+
+CMD ["sleep", "infinity"]
