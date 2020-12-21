@@ -6,13 +6,8 @@ import { Validator } from "jsonschema";
 import globalModules from "global-modules";
 import { Table } from "console-table-printer";
 
-type Dependant = {
-  name: string;
-  version: string;
-};
-
 // Set the program version
-program.version("1.0.8");
+program.version("1.0.0");
 
 const loadFile = (filename: string) => {
   try {
@@ -46,29 +41,23 @@ if (!validated.valid) {
 }
 
 /**
- * Show deps
+ * Show scripts
  */
-let deps = [];
-for (let [name, version] of Object.entries(data?.dependencies)) {
-  deps.push({ Name: name, Version: version });
+let scripts = [];
+for (let [name] of Object.entries(data?.scripts)) {
+  scripts.push({ Name: name });
 }
 
-let devDeps = [];
-for (let [name, version] of Object.entries(data?.devDependencies)) {
-  devDeps.push({ Name: name, Version: version });
-}
-
-function depsTable(title: string, deps: any) {
+function scripsTable(title: string, scripts: any) {
   const p = new Table({
     title,
-    columns: [{ name: "Name" }, { name: "Version" }],
+    columns: [{ name: "Name" }],
   });
-  p.addRows(deps);
+  p.addRows(scripts);
 
   return p.render();
 }
 
-console.log(`${depsTable('dependencies', deps)}`);
-console.log(`${depsTable('devDependencies', devDeps)}`);
+console.log(`${scripsTable('scripts', scripts)}`);
 
 process.exit(0);
