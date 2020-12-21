@@ -7,11 +7,7 @@ describe("Loading funcion", () => {
     // test
   })
 
-  test("it should load dependencies", () => {
-    // test
-  })
-
-  test("it should load devDependencies", () => {
+  test("it should load scripts", () => {
     // test
   })
 });
